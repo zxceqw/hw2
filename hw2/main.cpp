@@ -36,6 +36,40 @@ void Div(T1 a, T2 b)
 
 int main()
 {
+
+	cout << "2.1" << endl;
+	int x;
+	bool z = 1;
+	double a, b;
+	cout << "Enter two numbers to do some operations with them: " << endl;
+	cin >> a >> b;
+	while (z) {
+		cout << "For sum enter 1" << endl << "For sub enter 2" << endl << "For multiply enter 3" << endl << "For division enter 4" << endl << "For exit enter 5" << endl << endl;
+		cin >> x;
+
+		switch (x)
+		{
+		case (1):
+			Sum(a, b);
+			break;
+		case (2):
+			Sub(a, b);
+			break;
+		case (3):
+			Mult(a, b);
+			break;
+		case (4):
+			Div(a, b);
+			break;
+		case (5):
+			z = !z;
+		default:
+			cout << "End" << endl;
+			break;
+		}
+	}
+	
+
 	cout << "2.1" << endl;
 	int x;
 	bool z = 1;
